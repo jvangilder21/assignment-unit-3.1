@@ -41,7 +41,7 @@ console.log('The last animal is', animalArray[3]);
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
-console.log('come back to this stretch goal');
+console.log('The last animal w/o using index positioning is', animalArray[animalArray.length-1]);
 
 
 
@@ -98,13 +98,17 @@ console.log('The favorite foods are now', favFoods);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
-
+favFoods.sort();
+console.log('Our fav foods are sorted alphabetically', favFoods);
+reverseFavFoods = favFoods.reverse();
+console.log('Our fav foods in reverse alphabetical order', reverseFavFoods);
 
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
-
+let foods = favFoods.join(' and ');
+console.log('Our fav foods moved to a string w/and in between', foods);
 
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
@@ -112,5 +116,7 @@ console.log('The favorite foods are now', favFoods);
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+let favFoodsAndAnimals = favFoods.concat(animalArray);
+console.log('Our fav foods and animals are', favFoodsAndAnimals);
 
 
